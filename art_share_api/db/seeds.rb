@@ -64,3 +64,40 @@ ArtworkShare.create(artwork_id: 8, viewer_id: 10)
 ArtworkShare.create(artwork_id: 9, viewer_id: 10)
 ArtworkShare.create(artwork_id: 10, viewer_id: 10)
 
+comments = [
+    {body: "Managed methodical infrastructure", author_id: 2, artwork_id: 1},
+    {body: "Universal web-enabled flexibility", author_id:3 , artwork_id:2 },
+    {body: "Optimized incremental emulation", author_id: 5, artwork_id: 7},
+    {body: "User-friendly fault-tolerant alliance", author_id: 3, artwork_id:7 },
+    {body: "Upgradable local time-frame", author_id: 4, artwork_id: 5},
+    {body: "Operative maximized challenge", author_id: 2, artwork_id: 2},
+    {body: "Inverse mission-critical application", author_id:1 , artwork_id:4 },
+    {body: "Reduced coherent interface", author_id:3 , artwork_id: 4},
+    {body: "Visionary logistical encoding", author_id:2 , artwork_id:7 },
+    {body: "Cross-platform tertiary framework", author_id: 10, artwork_id: 7},
+    {body: "Digitized reciprocal intranet", author_id:5 , artwork_id: 8},
+    {body: "Upgradable incremental throughput", author_id:10 , artwork_id: 1},
+    {body: "Reduced didactic moratorium", author_id: 2, artwork_id: 1},
+    {body: "Synchronised coherent solution", author_id: 2, artwork_id: 3},
+    {body: "Diverse next generation product", author_id: 4, artwork_id: 3},
+    {body: "Implemented bottom-line open system", author_id:4, artwork_id:5 },
+    {body: "Pre-emptive bifurcated encoding", author_id: 6, artwork_id:6 },
+    {body: "Reduced radical algorithm", author_id: 8, artwork_id:3 },
+    {body: "Managed encompassing website", author_id: 10, artwork_id: 2},
+    {body: "Networked holistic hub", author_id: 10, artwork_id: 4},
+    {body: "Front-line mobile middleware", author_id: 8, artwork_id: 1},
+    {body: "Profit-focused system-worthy Graphical User Interface", author_id: 7, artwork_id: 10},
+    {body: "Organic tangible budgetary management", author_id: 3, artwork_id: 2},
+    {body: "Quality-focused grid-enabled adapter", author_id: 5, artwork_id:3 },
+    {body: "Devolved attitude-oriented policy", author_id: 4, artwork_id:7 },
+    {body: "Focused zero defect access", author_id: 3, artwork_id: 1},
+    {body: "Realigned attitude-oriented hierarchy", author_id: 2, artwork_id: 10},
+    {body: "Polarised bi-directional hierarchy", author_id: 2, artwork_id: 10},
+    {body: "Centralized systemic migration", author_id: 1, artwork_id:10 },
+    {body: "Streamlined actuating moratorium", author_id: 1, artwork_id: 10}
+]
+
+comments.each do |hash|
+    Comment.create(body:hash[:body], author_id:hash[:author_id], artwork_id:hash[:artwork_id])
+    p "#{hash[:body]} has been created by #{hash[:author_id]} for #{hash[:artwork_id]}!"
+end

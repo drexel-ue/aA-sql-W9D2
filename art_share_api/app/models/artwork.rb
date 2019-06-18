@@ -37,7 +37,7 @@ class Artwork < ApplicationRecord
             .joins(:shares)
             .where("artwork_shares.viewer_id = :id or artworks.artist_id = :id", id: user_id)
     end
-    
+
 
     
 end
