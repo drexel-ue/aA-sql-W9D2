@@ -28,16 +28,14 @@ class Artwork < ApplicationRecord
         through: :shares,
         source: :viewer
 
+    has_many :comments,
+        foreign_key: :artwork_id,
+        dependent: :destroy
+
     def self.gather(user_id)
         Artwork
             .joins(:shares)
             .where("artwork_shares.viewer_id = :id or artworks.artist_id = :id", id: user_id)
-        
-        
-        # user = User.find(user_id)
-        # arts = user.shared_artworks
-        # art2 = user.artworks
-        # arts + art2
     end
     
 
