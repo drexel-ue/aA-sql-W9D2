@@ -9621,3 +9621,156 @@ Processing by CommentsController#index as */*
 Completed 200 OK in 86ms (Views: 36.3ms | ActiveRecord: 52.4ms)
 
 
+Started GET "/users/2" for ::1 at 2019-06-18 18:08:48 -0400
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2", "user"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:09:03 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/Ilka@gnet.serve" for ::1 at 2019-06-18 18:11:35 -0400
+Processing by UsersController#show as 
+  Parameters: {"id"=>"Ilka@gnet", "user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 404 Not Found in 7ms (ActiveRecord: 9.2ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find User with 'id'=Ilka@gnet:
+  app/controllers/users_controller.rb:12:in `show'
+
+Started GET "/users" for ::1 at 2019-06-18 18:12:33 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:13:10 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:13:30 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:14:10 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:16:49 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:17:22 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" IS NULL[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 6ms (Views: 1.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:18:21 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:18:57 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+
+TypeError - no implicit conversion of Symbol into Integer:
+  app/controllers/users_controller.rb:5:in `index'
+
+Started GET "/users" for ::1 at 2019-06-18 18:19:12 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - undefined local variable or method `username' for #<UsersController:0x00007f8465c4a108>
+Did you mean?  users:
+  app/controllers/users_controller.rb:5:in `index'
+
+Started GET "/users" for ::1 at 2019-06-18 18:19:23 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:20:06 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (58.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (usermame = NULL)[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 58.9ms)
+
+
+
+PG::UndefinedColumn - ERROR:  column "usermame" does not exist
+LINE 1: SELECT "users".* FROM "users" WHERE (usermame = NULL)
+                                             ^
+HINT:  Perhaps you meant to reference the column "users.username".
+:
+  app/controllers/users_controller.rb:5:in `index'
+
+Started GET "/users" for ::1 at 2019-06-18 18:22:08 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Ilka@gnet.serve"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Ilka@gnet.serve"], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:22:26 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 18:22:40 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"Desmund@hesmund.centro"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Desmund@hesmund.centro"], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+

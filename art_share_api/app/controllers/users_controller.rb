@@ -1,7 +1,11 @@
 class UsersController < ApplicationController
   def index
+    if params[:user][:username]
+      render json: User.find_by(username: params[:user][:username])
+    else
       users = User.all
       render json: users
+    end
   end
   
   def show 
@@ -43,4 +47,5 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:username)
   end
+
 end
