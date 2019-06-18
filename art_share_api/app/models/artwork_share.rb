@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: artwork_shares
+#
+#  id         :bigint           not null, primary key
+#  viewer_id  :integer
+#  artwork_id :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class ArtworkShare < ApplicationRecord
     validates :viewer_id, uniqueness: {scope: :artwork_id}
     belongs_to :viewer,
@@ -13,6 +24,5 @@ class ArtworkShare < ApplicationRecord
 
         
 
-    user -> artworkshare -> artwork
 
 end

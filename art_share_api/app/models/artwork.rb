@@ -14,9 +14,9 @@ class Artwork < ApplicationRecord
 
     validates :title, uniqueness: {scope: :artist_id}
 
-    belong_to :artist,
+    belongs_to :artist,
         class_name: :User,
-        primar_key: :id,
+        primary_key: :id,
         foreign_key: :artist_id
 
     has_many :shares,
