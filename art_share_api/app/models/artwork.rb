@@ -32,6 +32,8 @@ class Artwork < ApplicationRecord
         foreign_key: :artwork_id,
         dependent: :destroy
 
+    has_many :likes, as: :likeable
+
     def self.gather(user_id)
         Artwork
             .joins(:shares)
