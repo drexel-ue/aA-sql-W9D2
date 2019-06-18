@@ -9,7 +9,10 @@ Rails.application.routes.draw do
   # delete "/users/:id", to: "user#destroy"
   # post "/users/nest_test", to: "user#nest"
 
-  resources :users, only:[:index, :show, :update, :delete, :create]
+  resources :users, only:[:index, :show, :update, :delete, :create] do
+    resources :artworks, only: [:index]
+  end
   resources :artworks, only:[:index, :show, :update, :delete, :create]
+  resources :artwork_shares, only:[:create]
 
 end

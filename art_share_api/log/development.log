@@ -6608,3 +6608,501 @@ Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 4.3ms)
   ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
   [1m[36mArtwork Load (1.0ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
   [1m[36mArtworkShare Load (1.8ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares"[0m
+Started GET "/artwork_shares/1" for ::1 at 2019-06-18 15:43:45 -0400
+  [1m[35m (37.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  
+ActionController::RoutingError (No route matches [GET] "/artwork_shares/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artwork_shares/1" for ::1 at 2019-06-18 15:44:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artwork_shares/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artwork_shares/1" for ::1 at 2019-06-18 15:44:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artwork_shares/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artwork_shares/1" for ::1 at 2019-06-18 15:44:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artwork_shares/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artwork_shares/1" for ::1 at 2019-06-18 15:44:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artwork_shares/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artwork_shares/1" for ::1 at 2019-06-18 15:45:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artwork_shares/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artwork_shares/1" for ::1 at 2019-06-18 15:47:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artwork_shares/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artwork_shares" for ::1 at 2019-06-18 15:48:06 -0400
+Processing by ArtworkSharesController#index as */*
+  Parameters: {"user_id"=>1, "artwork_share"=>{}}
+Completed 404 Not Found in 186ms (ActiveRecord: 145.8ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find ArtworkShare without an ID:
+  app/controllers/artwork_shares_controller.rb:4:in `index'
+
+Started GET "/artwork_shares" for ::1 at 2019-06-18 15:48:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artwork_shares"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artworks/1" for ::1 at 2019-06-18 15:50:15 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"1", "artwork"=>{}}
+  [1m[36mArtwork Load (111.1ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 237ms (Views: 0.9ms | ActiveRecord: 120.2ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 15:50:30 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 15:52:13 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 22ms (Views: 0.6ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/artworks/4" for ::1 at 2019-06-18 15:52:22 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"4", "artwork"=>{}}
+  [1m[36mArtwork Load (0.7ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/artworks/46" for ::1 at 2019-06-18 15:52:23 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"46", "artwork"=>{}}
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 404 Not Found in 5ms (ActiveRecord: 0.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Artwork with 'id'=46:
+  app/controllers/artworks_controller.rb:8:in `show'
+
+Started GET "/artworks/6" for ::1 at 2019-06-18 15:52:26 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"6", "artwork"=>{}}
+  [1m[36mArtwork Load (0.8ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/artworks/8" for ::1 at 2019-06-18 15:52:28 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"8", "artwork"=>{}}
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artworks/5" for ::1 at 2019-06-18 15:52:30 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"5", "artwork"=>{}}
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artworks/4" for ::1 at 2019-06-18 15:52:32 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"4", "artwork"=>{}}
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 15:56:14 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 15:58:59 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 15:59:04 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (1.2ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 15:59:05 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 16:01:32 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.2ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/artworks" for ::1 at 2019-06-18 16:01:49 -0400
+Processing by ArtworksController#index as */*
+  Parameters: {"user_id"=>1, "artwork"=>{}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `artist' for #<Class:0x00007f8465e7aa18>:
+  app/controllers/artworks_controller.rb:3:in `index'
+
+Started GET "/artworks" for ::1 at 2019-06-18 16:02:35 -0400
+Processing by ArtworksController#index as */*
+  Parameters: {"user_id"=>1, "artwork"=>{}}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 16:02:59 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/artworks" for ::1 at 2019-06-18 16:03:05 -0400
+Processing by ArtworksController#index as */*
+  Parameters: {"user_id"=>1, "artwork"=>{}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `artist' for #<Class:0x00007f8465c3bf90>:
+  app/controllers/artworks_controller.rb:3:in `index'
+
+Started GET "/artworks" for ::1 at 2019-06-18 16:03:48 -0400
+Processing by ArtworksController#index as */*
+  Parameters: {"user_id"=>1, "artwork"=>{}}
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1 LIMIT $2[0m  [["artist_id", nil], ["LIMIT", 11]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 3.1ms)
+
+
+  [1m[36mCACHE Artwork Load (0.0ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1 LIMIT $2[0m  [["artist_id", nil], ["LIMIT", 11]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+
+NoMethodError - undefined method `artist' for #<ActiveRecord::Relation []>:
+  app/controllers/artworks_controller.rb:3:in `index'
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 16:06:29 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/artworks/8" for ::1 at 2019-06-18 16:06:40 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"8", "artwork"=>{}}
+  [1m[36mArtwork Load (0.5ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 16:08:11 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.3ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/artworks/8" for ::1 at 2019-06-18 16:08:18 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"8", "artwork"=>{}}
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 16:08:44 -0400
+Processing by ArtworksController#show as */*
+  Parameters: {"user_id"=>1, "id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/artworks/7" for ::1 at 2019-06-18 16:34:47 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"artwork_share": {"viewer_id": 1, ""
+}
+
+JSON::ParserError - 767: unexpected token at '{
+	"artwork_share": {"viewer_id": 1, ""
+}':
+
+Started GET "/users/7/artworks" for ::1 at 2019-06-18 16:34:56 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"artwork_share": {"viewer_id": 1, ""
+}
+
+JSON::ParserError - 767: unexpected token at '{
+	"artwork_share": {"viewer_id": 1, ""
+}':
+
+Started GET "/users/7/artworks" for ::1 at 2019-06-18 16:35:08 -0400
+Processing by ArtworksController#index as */*
+  Parameters: {"user_id"=>"7", "artwork"=>{}}
+  [1m[36mArtwork Load (1.1ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 20ms (Views: 12.0ms | ActiveRecord: 18.2ms)
+
+

@@ -1,7 +1,10 @@
 class ArtworksController < ApplicationController
     def index
-        artworks = Artwork.all
-        render json: artworks
+      if params[:id]
+        render json: Artwork.gather(params[:id])
+      else
+        render json: Artwork.all
+      end
     end
     
     def show 
