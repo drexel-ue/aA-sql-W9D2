@@ -9255,3 +9255,369 @@ Migrating to CreateComment (20190618204457)
   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
   [1m[36mArtwork Load (0.9ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started POST "/comments" for ::1 at 2019-06-18 17:26:44 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+
+SyntaxError - syntax error, unexpected end-of-input, expecting end:
+  app/controllers/comments_controller.rb:29:in `'
+
+Started POST "/comments" for ::1 at 2019-06-18 17:27:09 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"comment": {"horse_rdish": "tator_sauce"
+}
+
+JSON::ParserError - 767: unexpected token at '{
+	"comment": {"horse_rdish": "tator_sauce"
+}':
+
+Started POST "/comments" for ::1 at 2019-06-18 17:28:23 -0400
+Processing by CommentsController#create as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "author_id"=>10, "artwork_id"=>1}}
+Unpermitted parameters: :body, :artwork_id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Load (39.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 222ms (Views: 1.3ms | ActiveRecord: 61.4ms)
+
+
+Started POST "/comments" for ::1 at 2019-06-18 17:29:50 -0400
+Processing by CommentsController#create as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "author_id"=>10, "artwork_id"=>1}}
+Unpermitted parameters: :body, :artwork_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 422 Unprocessable Entity in 45ms (Views: 0.3ms | ActiveRecord: 14.3ms)
+
+
+Started POST "/comments" for ::1 at 2019-06-18 17:30:24 -0400
+Processing by CommentsController#create as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "user_id"=>10, "artwork_id"=>1}}
+Unpermitted parameters: :body, :artwork_id
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'user_id' for Comment.:
+  app/controllers/comments_controller.rb:4:in `create'
+
+Started POST "/comments" for ::1 at 2019-06-18 17:31:01 -0400
+Processing by CommentsController#create as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "author_id"=>10, "artwork_id"=>1}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT  "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO "comments" ("author_id", "artwork_id", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_id", 10], ["artwork_id", 1], ["body", "Streamlined flubber nuggets"], ["created_at", "2019-06-18 21:31:01.684740"], ["updated_at", "2019-06-18 21:31:01.684740"]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 63ms (Views: 0.6ms | ActiveRecord: 22.4ms)
+
+
+Started DELETE "/comments/31" for ::1 at 2019-06-18 17:34:00 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/comments/31"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/comments/31" for ::1 at 2019-06-18 17:34:26 -0400
+Processing by CommentsController#destroy as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "author_id"=>10, "artwork_id"=>1}, "id"=>"31"}
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mComment Destroy (2.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 31]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 28ms (Views: 0.8ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/comments/31" for ::1 at 2019-06-18 17:34:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/comments/31"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/comments/31" for ::1 at 2019-06-18 17:36:31 -0400
+Processing by CommentsController#show as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "author_id"=>10, "artwork_id"=>1}, "id"=>"31"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 404 Not Found in 10ms (ActiveRecord: 7.4ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Comment with 'id'=31:
+  app/controllers/comments_controller.rb:19:in `show'
+
+Started GET "/comments/31" for ::1 at 2019-06-18 17:37:45 -0400
+Processing by CommentsController#show as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "author_id"=>10, "artwork_id"=>1}, "id"=>"31"}
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 404 Not Found in 11ms (ActiveRecord: 8.3ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Comment with 'id'=31:
+  app/controllers/comments_controller.rb:19:in `show'
+
+Started GET "/comments/30" for ::1 at 2019-06-18 17:38:28 -0400
+Processing by CommentsController#show as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "author_id"=>10, "artwork_id"=>1}, "id"=>"30"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/comments/31" for ::1 at 2019-06-18 17:39:01 -0400
+Processing by CommentsController#show as */*
+  Parameters: {"comment"=>{"body"=>"Streamlined flubber nuggets", "author_id"=>10, "artwork_id"=>1}, "id"=>"31"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 404 Not Found in 10ms (ActiveRecord: 7.5ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Comment with 'id'=31:
+  app/controllers/comments_controller.rb:19:in `show'
+
+Started GET "/comments/31" for ::1 at 2019-06-18 17:39:54 -0400
+Processing by CommentsController#show as */*
+  Parameters: {"id"=>"31", "comment"=>{}}
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms)
+
+
+
+ActiveRecord::RecordNotFound - Couldn't find Comment with 'id'=31:
+  app/controllers/comments_controller.rb:19:in `show'
+
+Started GET "/users/10/comments" for ::1 at 2019-06-18 17:41:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/10/comments"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artworks/10/comments" for ::1 at 2019-06-18 17:41:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/artworks/10/comments"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/artworks/10/comments" for ::1 at 2019-06-18 17:42:27 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"artwork_id"=>"10", "comment"=>{}}
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 34ms (Views: 27.8ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/users/10/comments" for ::1 at 2019-06-18 17:42:36 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"user_id"=>"10", "comment"=>{}}
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/10/comments" for ::1 at 2019-06-18 17:43:48 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"user_id"=>"10", "comment"=>{}}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/10/comments" for ::1 at 2019-06-18 17:44:38 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"user_id"=>"10", "comment"=>{}}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 3.9ms)
+
+
+
+NoMethodError - undefined method `gather_comments' for #<Class:0x00007f8467c0c568>
+Did you mean?  gather_coments:
+  app/controllers/comments_controller.rb:30:in `index'
+
+Started GET "/users/10/comments" for ::1 at 2019-06-18 17:44:58 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"user_id"=>"10", "comment"=>{}}
+  [1m[36mComment Load (35.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" INNER JOIN "users" ON "users"."id" = "comments"."author_id" INNER JOIN "artworks" ON "artworks"."id" = "comments"."artwork_id" WHERE (artwork.id = '10' or user.id = '10')[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 46.1ms)
+
+
+
+PG::SyntaxError - ERROR:  syntax error at or near "."
+LINE 1: ...nts"."artwork_id" WHERE (artwork.id = '10' or user.id = '10'...
+                                                             ^
+:
+  app/controllers/comments_controller.rb:30:in `index'
+
+Started GET "/users/10/comments" for ::1 at 2019-06-18 17:45:13 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"user_id"=>"10", "comment"=>{}}
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" INNER JOIN "users" ON "users"."id" = "comments"."author_id" INNER JOIN "artworks" ON "artworks"."id" = "comments"."artwork_id" WHERE (artworks.id = '10' or users.id = '10')[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 38ms (Views: 24.6ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/users/10/comments" for ::1 at 2019-06-18 17:47:01 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"user_id"=>"10", "comment"=>{}}
+  [1m[36mComment Load (27.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" INNER JOIN "users" ON "users"."id" = "comments"."author_id" INNER JOIN "artworks" ON "artworks"."id" = "comments"."artwork_id" WHERE (users.id = '10')[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 62ms (Views: 22.1ms | ActiveRecord: 42.1ms)
+
+
+Started GET "/artworks/10/comments" for ::1 at 2019-06-18 17:47:12 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"artwork_id"=>"10", "comment"=>{}}
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" INNER JOIN "users" ON "users"."id" = "comments"."author_id" INNER JOIN "artworks" ON "artworks"."id" = "comments"."artwork_id" WHERE (artworks.id = NULL)[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/artworks/2/comments" for ::1 at 2019-06-18 17:47:21 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"artwork_id"=>"2", "comment"=>{}}
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" INNER JOIN "users" ON "users"."id" = "comments"."author_id" INNER JOIN "artworks" ON "artworks"."id" = "comments"."artwork_id" WHERE (artworks.id = NULL)[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/artworks/7/comments" for ::1 at 2019-06-18 17:47:28 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"artwork_id"=>"7", "comment"=>{}}
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" INNER JOIN "users" ON "users"."id" = "comments"."author_id" INNER JOIN "artworks" ON "artworks"."id" = "comments"."artwork_id" WHERE (artworks.id = NULL)[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/artworks/7/comments" for ::1 at 2019-06-18 17:47:49 -0400
+Processing by CommentsController#index as */*
+  Parameters: {"artwork_id"=>"7", "comment"=>{}}
+  [1m[36mComment Load (37.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" INNER JOIN "users" ON "users"."id" = "comments"."author_id" INNER JOIN "artworks" ON "artworks"."id" = "comments"."artwork_id" WHERE (artworks.id = '7')[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 86ms (Views: 36.3ms | ActiveRecord: 52.4ms)
+
+

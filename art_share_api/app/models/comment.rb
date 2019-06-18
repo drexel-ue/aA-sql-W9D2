@@ -22,4 +22,20 @@ class Comment < ApplicationRecord
     belongs_to :artwork,
         foreign_key: :artwork_id,
         class_name: :Artwork
+
+    def self.gather_comments_author(id)
+        Comment
+            .joins(:author)
+            .joins(:artwork)
+            .where("users.id = :id", id: id)
+    end
+
+    def self.gather_comments_artwork(id)
+        Comment
+            .joins(:author)
+            .joins(:artwork)
+            .where("artworks.id = :id", id: id)
+    end
+
+    
 end
