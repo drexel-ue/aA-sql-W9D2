@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # resources :users
+
   # get "/users", to: "user#index"
   # get "/users/:id", to:"user#show"
   # post "/users", to: "user#create"
@@ -7,5 +9,6 @@ Rails.application.routes.draw do
   # delete "/users/:id", to: "user#destroy"
   # post "/users/nest_test", to: "user#nest"
 
-  resources :users 
+  resources :users, only:[:index, :show, :update, :delete, :create]
+
 end

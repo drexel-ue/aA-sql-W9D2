@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
   def index
       users = User.all
       render json: users
@@ -10,8 +10,13 @@ class UserController < ApplicationController
   end
 
   def create 
-    user = User.create(name:params['name'], email:params['email'])
-    render plain: "created user: #{user.name} with id: #{user.id}", json: user
+    user = User.new(user_params)
+    if user.save
+      render plain: "created user: #{user.username} with id: #{user.id}", json: user
+    else
+      render json: user.errors.full_messages, status: 422
+    end
+    
   end
 
   def update
@@ -24,8 +29,9 @@ class UserController < ApplicationController
   end
 
   def destroy
-    User.find(params[:id]).destroy
-    render plain: "be gone thot"
+    user = User.find(params[:id])
+    user.destroy
+    render json: user
   end
 
   def nest
@@ -34,11 +40,7 @@ class UserController < ApplicationController
 
   private
 
-  # def validate_name(name)
-  #   name.is_a?(String)
-  # end
-
   def user_params
-    params.require(:user).permit(:name)
+    params.require(:user).permit(:username)
   end
 end

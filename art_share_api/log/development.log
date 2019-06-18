@@ -3442,3 +3442,364 @@ Migrating to CorrectArtworkShares (20190618164846)
   ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
   ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Started POST "/users" for ::1 at 2019-06-18 13:19:35 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+
+NameError - uninitialized constant UsersController:
+
+Started POST "/users" for ::1 at 2019-06-18 13:20:31 -0400
+
+NameError - uninitialized constant UsersController:
+
+Started POST "/users" for ::1 at 2019-06-18 13:20:33 -0400
+
+NameError - uninitialized constant UsersController:
+
+Started POST "/user" for ::1 at 2019-06-18 13:21:11 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/user"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-06-18 13:21:30 -0400
+
+NameError - uninitialized constant UsersController:
+
+Started POST "/users" for ::1 at 2019-06-18 13:22:12 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/user" for ::1 at 2019-06-18 13:22:22 -0400
+Processing by UserController#create as */*
+  Parameters: {"kalamazoo"=>"little bobby tables", "user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 3.7ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/user_controller.rb:47:in `user_params'
+  app/controllers/user_controller.rb:13:in `create'
+
+Started POST "/user" for ::1 at 2019-06-18 13:23:21 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/user"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2019-06-18 13:23:27 -0400
+
+NameError - uninitialized constant UsersController:
+
+Started POST "/users" for ::1 at 2019-06-18 13:23:48 -0400
+Processing by UserController#create as */*
+  Parameters: {"kalamazoo"=>"little bobby tables", "user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 4.7ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/user_controller.rb:47:in `user_params'
+  app/controllers/user_controller.rb:13:in `create'
+
+Started POST "/users" for ::1 at 2019-06-18 13:24:27 -0400
+
+NameError - uninitialized constant UsersController:
+
+Started POST "/users" for ::1 at 2019-06-18 13:25:07 -0400
+Processing by UserController#create as */*
+  Parameters: {"kalamazoo"=>"little bobby tables", "user"=>{}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 5.7ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/user_controller.rb:47:in `user_params'
+  app/controllers/user_controller.rb:13:in `create'
+
+Started POST "/users" for ::1 at 2019-06-18 13:26:02 -0400
+Processing by UserController#create as */*
+  Parameters: {"kalamazoo"=>"little bobby tables", "user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 3.1ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/user_controller.rb:47:in `user_params'
+  app/controllers/user_controller.rb:13:in `create'
+
+Started POST "/users" for ::1 at 2019-06-18 13:27:20 -0400
+Processing by UserController#create as */*
+  Parameters: {"kalamazoo"=>"little bobby tables", "user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 4.0ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/user_controller.rb:43:in `user_params'
+  app/controllers/user_controller.rb:13:in `create'
+
+Started POST "/users" for ::1 at 2019-06-18 13:27:39 -0400
+Processing by UserController#create as */*
+  Parameters: {"kalamazoo"=>"little bobby tables", "user"=>{}}
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 4.4ms)
+
+
+
+NameError - undefined local variable or method `param' for #<UserController:0x00007fc35cb0e038>
+Did you mean?  params
+               params=:
+  app/controllers/user_controller.rb:43:in `user_params'
+  app/controllers/user_controller.rb:13:in `create'
+
+Started POST "/users" for ::1 at 2019-06-18 13:29:47 -0400
+Processing by UserController#create as */*
+  Parameters: {"kalamazoo"=>"little bobby tables", "user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 3.5ms)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/user_controller.rb:43:in `user_params'
+  app/controllers/user_controller.rb:13:in `create'
+
+Started POST "/users" for ::1 at 2019-06-18 13:31:55 -0400
+Processing by UserController#create as */*
+  Parameters: {"user"=>{"kalamazoo"=>"little bobby tables"}}
+Unpermitted parameter: :kalamazoo
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 422 Unprocessable Entity in 36ms (Views: 0.6ms | ActiveRecord: 10.8ms)
+
+
+Started POST "/users" for ::1 at 2019-06-18 13:33:47 -0400
+Processing by UserController#create as */*
+  Parameters: {"user"=>{"username"=>"little bobby tables"}}
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "little bobby tables"], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "little bobby tables"], ["created_at", "2019-06-18 17:33:47.446700"], ["updated_at", "2019-06-18 17:33:47.446700"]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 12ms (Views: 0.7ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/users/11" for ::1 at 2019-06-18 13:35:50 -0400
+Processing by UserController#destroy as */*
+  Parameters: {"user"=>{"username"=>"little bobby tables"}, "id"=>"11"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 20ms (Views: 1.9ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users" for ::1 at 2019-06-18 13:38:03 -0400
+Processing by UserController#create as */*
+  Parameters: {"user"=>{"username"=>"little bobby tables"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "little bobby tables"], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["username", "little bobby tables"], ["created_at", "2019-06-18 17:38:03.232542"], ["updated_at", "2019-06-18 17:38:03.232542"]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 11.2ms)
+
+
+Started DELETE "/users/12" for ::1 at 2019-06-18 13:38:43 -0400
+Processing by UserController#destroy as */*
+  Parameters: {"user"=>{"username"=>"little bobby tables"}, "id"=>"12"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mArtwork Load (0.7ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."artist_id" = $1[0m  [["artist_id", 12]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mArtworkShare Load (1.2ms)[0m  [1m[34mSELECT "artwork_shares".* FROM "artwork_shares" WHERE "artwork_shares"."viewer_id" = $1[0m  [["viewer_id", 12]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mArtwork Load (0.7ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" INNER JOIN "artwork_shares" ON "artworks"."id" = "artwork_shares"."artwork_id" WHERE "artwork_shares"."viewer_id" = $1[0m  [["viewer_id", 12]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 181ms (Views: 0.9ms | ActiveRecord: 21.7ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 13:38:51 -0400
+Processing by UserController#index as */*
+  Parameters: {"user"=>{"username"=>"little bobby tables"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-06-18 13:42:13 -0400
+
+NameError - uninitialized constant UsersController:
+
+Started GET "/users" for ::1 at 2019-06-18 13:42:15 -0400
+
+NameError - uninitialized constant UsersController:
+
+Started GET "/users" for ::1 at 2019-06-18 13:42:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-06-18 13:42:54 -0400
+
+SyntaxError - syntax error, unexpected tLABEL
+  resources users: only:[:index, :show, :update, :del...
+                   ^~~~~:
+  config/routes.rb:12:in `'
+
+Started GET "/users" for ::1 at 2019-06-18 13:44:29 -0400
+
+NameError - uninitialized constant UsersController:
+
+Started GET "/users" for ::1 at 2019-06-18 13:45:54 -0400
+
+LoadError - Unable to autoload constant UsersController, expected /Users/ikeshpack/Desktop/Development/app_academy/sql/w9d2/art_share_api/app/controllers/users_controller.rb to define it:
+
+Started GET "/users" for ::1 at 2019-06-18 13:46:17 -0400
+
+LoadError - cannot load such file -- /Users/ikeshpack/Desktop/Development/app_academy/sql/w9d2/art_share_api/app/controllers/users_controller.rb:
+
+Started GET "/users" for ::1 at 2019-06-18 13:46:23 -0400
+
+LoadError - cannot load such file -- /Users/ikeshpack/Desktop/Development/app_academy/sql/w9d2/art_share_api/app/controllers/users_controller.rb:
+
+Started GET "/users" for ::1 at 2019-06-18 13:46:39 -0400
+Processing by UsersController#index as */*
+  Parameters: {"user"=>{"username"=>"little bobby tables"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/users/1" for ::1 at 2019-06-18 13:47:06 -0400
+Processing by UsersController#show as */*
+  Parameters: {"user"=>{"username"=>"little bobby tables"}, "id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/ikeshpack/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/activesupport-5.2.3/lib/active_support/subscriber.rb:101
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
