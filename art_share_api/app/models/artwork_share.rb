@@ -11,6 +11,7 @@
 
 class ArtworkShare < ApplicationRecord
     validates :viewer_id, uniqueness: {scope: :artwork_id}
+    
     belongs_to :viewer,
         class_name: :User,
         foreign_key: :viewer_id
@@ -21,8 +22,5 @@ class ArtworkShare < ApplicationRecord
 
     has_many :shared_viewers,
         through: :viewer
-
-        
-
 
 end

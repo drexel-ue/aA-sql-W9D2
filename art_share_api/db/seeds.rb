@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+require 'byebug'
 names = [
     {'email' => 'Ilka@gnet.serve'},
     {'email'  => 'Ervin@ydos.parse'},
@@ -24,21 +24,29 @@ names.each do |userDeats|
     p "username created with email: #{userDeats["email"]}"
 end
 
-artwork_titles = [{'title' => 'matrices', 'url' => 'zxcvedf.com'}, 
-{'title' =>'superstructure','url' => 'zxcvedfdf.com'},
-{'title' =>'implementation','url' => 'zxcwfdvedf.com'},
-{'title' =>'Total','url' => 'zxcvedf.com'},
-{'title' =>'5th generation','url' => 'zxcvedfsdf.com'},
-{'title' =>'content-based','url' =>'zxcvdfvedf.com' },
-{'title' =>'mobile','url' => 'zxcveeredf.com'},
-{'title' =>'asymmetric','url' => 'zxcvefxcvdf.com'},
-{'title' =>'optimizing','url' => 'zxcvgetddf.com'},
-{'title' =>'ability','url' => 'zxcvefyrfdf.com'}
+artwork_titles = [
+    {'title' => 'matrices', 'url' => 'zxcvedf.com', 'artist_id' => 1}, 
+    {'title' =>'superstructure','url' => 'zxcvedfdf.com', 'artist_id' => 2},
+    {'title' =>'implementation','url' => 'zxcwfdvedf.com', 'artist_id' => 3},
+    {'title' =>'Total','url' => 'zxcvedf.com', 'artist_id' => 4},
+    {'title' =>'5th generation','url' => 'zxcvedfsdf.com', 'artist_id' => 5},
+    {'title' =>'content-based','url' =>'zxcvdfvedf.com', 'artist_id' =>6},
+    {'title' =>'mobile','url' => 'zxcveeredf.com', 'artist_id' => 7},
+    {'title' =>'mobiled2','url' => 'zeeredf.com', 'artist_id' => 7},
+    {'title' =>'hobile','url' => 'zxcveeredf.com', 'artist_id' => 7},
+    {'title' =>'tobile','url' => 'zxcveeredf.com', 'artist_id' => 7},
+    {'title' =>'asymmetric','url' => 'zxcvefxcvdf.com','artist_id' => 8},
+    {'title' =>'optimizing','url' => 'zxcvgetddf.com','artist_id' => 9},
+    {'title' =>'ability','url' => 'zxcvefyrfdf.com','artist_id' => 10}
 ]
 
 artwork_titles.each do |map|
-    Artwork.create(title: map["title"], image_url: map['url'])
-    p "#{map["title"]} created and hosted at: #{map['url']}"
+    # debugger
+    if Artwork.create(title: map["title"], image_url: map['url'], artist_id: map['artist_id'])
+        p "#{map["title"]} created and hosted at: #{map['url']}"
+    else
+        p "IT DIDNT WORK FOOL"
+    end
 end
 
 ArtworkShare.create(artwork_id: 1, viewer_id: 1)

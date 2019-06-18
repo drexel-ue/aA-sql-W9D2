@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   # post "/users/nest_test", to: "user#nest"
 
   resources :users, only:[:index, :show, :update, :delete, :create]
+  resources :artworks, only:[:index, :show, :update, :delete, :create]
 
 end

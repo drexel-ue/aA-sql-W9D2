@@ -12,7 +12,8 @@
 
 class Artwork < ApplicationRecord
 
-    validates :title, uniqueness: {scope: :artist_id}
+    validates :title, presence: true, uniqueness: {scope: :artist_id}
+    validates :title, presence: true
 
     belongs_to :artist,
         class_name: :User,
